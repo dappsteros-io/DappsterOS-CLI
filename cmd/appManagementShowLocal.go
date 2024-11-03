@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 IceWhaleTech
+Copyright © 2023 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/IceWhaleTech/CasaOS-CLI/codegen/app_management"
 	"github.com/alecthomas/chroma/quick"
+	"github.com/dappster-io/DappsterOS-CLI/codegen/app_management"
 	"github.com/spf13/cobra"
 )
 
@@ -188,7 +188,7 @@ func showAppList(ctx context.Context, writer io.Writer, client *app_management.C
 
 			message := string(body)
 			if message == "" {
-				message = "is the casaos-app-management service running?"
+				message = "is the dappsteros-app-management service running?"
 			}
 
 			return fmt.Errorf("%s - %s", response.Status, message)

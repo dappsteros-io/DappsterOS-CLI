@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 IceWhaleTech
+Copyright © 2023 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/IceWhaleTech/CasaOS-CLI/codegen/casaos"
+	"github.com/dappster-io/DappsterOS-CLI/codegen/dappsteros"
 	"github.com/spf13/cobra"
 )
 
@@ -37,9 +37,9 @@ var healthcheckPortsInUseCmd = &cobra.Command{
 			return err
 		}
 
-		url := fmt.Sprintf("http://%s/%s", rootURL, BasePathCasaOS)
+		url := fmt.Sprintf("http://%s/%s", rootURL, BasePathDappsterOS)
 
-		client, err := casaos.NewClientWithResponses(url)
+		client, err := dappsteros.NewClientWithResponses(url)
 		if err != nil {
 			return err
 		}
@@ -53,7 +53,7 @@ var healthcheckPortsInUseCmd = &cobra.Command{
 		}
 
 		if response.StatusCode() != http.StatusOK {
-			var baseResponse casaos.BaseResponse
+			var baseResponse dappsteros.BaseResponse
 			if err := json.Unmarshal(response.Body, &baseResponse); err != nil {
 				return fmt.Errorf("%s - %s", response.Status(), response.Body)
 			}

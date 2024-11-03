@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 IceWhaleTech
+Copyright © 2023 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/IceWhaleTech/CasaOS-CLI/codegen/app_management"
 	"github.com/alecthomas/chroma/quick"
+	"github.com/dappster-io/DappsterOS-CLI/codegen/app_management"
 	"github.com/samber/lo"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"
@@ -65,7 +65,7 @@ var appManagementConvertAppFileCmd = &cobra.Command{
 
 		response, err := client.ConvertWithBodyWithResponse(ctx, &params, MINEApplicationJSON, file)
 		if err != nil {
-			fmt.Println("Error: Unable to reach CasaOS API. Try convert locally using `appfile2compose` command.")
+			fmt.Println("Error: Unable to reach DappsterOS API. Try convert locally using `appfile2compose` command.")
 			return err
 		}
 

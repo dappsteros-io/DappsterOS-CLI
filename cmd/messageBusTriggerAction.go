@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 IceWhaleTech
+Copyright © 2022 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/IceWhaleTech/CasaOS-CLI/codegen/message_bus"
+	"github.com/dappster-io/DappsterOS-CLI/codegen/message_bus"
 	"github.com/spf13/cobra"
 )
 

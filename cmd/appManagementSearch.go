@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 IceWhaleTech
+Copyright © 2023 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/IceWhaleTech/CasaOS-CLI/codegen/app_management"
+	"github.com/dappster-io/DappsterOS-CLI/codegen/app_management"
 	"github.com/samber/lo"
 	"github.com/spf13/cobra"
 )
@@ -34,7 +34,7 @@ const (
 )
 
 var authorTypes = []string{
-	string(app_management.Official), string(app_management.ByCasaos), string(app_management.Community),
+	string(app_management.Official), string(app_management.ByDappsteros), string(app_management.Community),
 }
 
 // appManagementSearchCmd represents the appManagementSearch command

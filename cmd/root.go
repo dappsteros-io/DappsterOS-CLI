@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 IceWhaleTech
+Copyright © 2022 dappster-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import (
 )
 
 const (
-	BasePathCasaOS = "v2/casaos"
+	BasePathDappsterOS = "v2/dappsteros"
 
 	FlagDir     = "dir"
 	FlagDryRun  = "dry-run"
@@ -35,10 +35,10 @@ const (
 	FlagForce   = "force"
 	FlagRootURL = "root-url"
 
-	GatewayPath = "/etc/casaos/gateway.ini"
+	GatewayPath = "/etc/dappsteros/gateway.ini"
 
 	DefaultTimeout = 10 * time.Second
-	RootGroupID    = "casaos-cli"
+	RootGroupID    = "dappsteros-cli"
 )
 
 var (
@@ -51,8 +51,8 @@ var (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "casaos-cli",
-	Short: "A command line interface for CasaOS",
+	Use:   "dappsteros-cli",
+	Short: "A command line interface for DappsterOS",
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -70,7 +70,7 @@ func Execute() {
 func init() {
 	url := ""
 
-	rootCmd.PersistentFlags().StringP(FlagRootURL, "u", "", "root url of CasaOS API")
+	rootCmd.PersistentFlags().StringP(FlagRootURL, "u", "", "root url of DappsterOS API")
 
 	if rootCmd.PersistentFlags().Changed(FlagRootURL) {
 		url = rootCmd.PersistentFlags().Lookup(FlagRootURL).Value.String()

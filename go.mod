@@ -1,4 +1,4 @@
-module github.com/IceWhaleTech/CasaOS-CLI
+module github.com/dappster-io/DappsterOS-CLI
 
 go 1.20
 
@@ -49,7 +49,7 @@ require (
 )
 
 require (
-	github.com/IceWhaleTech/CasaOS-Common v0.4.3
+	github.com/dappster-io/DappsterOS-Common v0.4.9-alpha11
 	github.com/googollee/go-socket.io v1.7.0
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
