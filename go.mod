@@ -1,8 +1,6 @@
-module github.com/dappster-io/DappsterOS-CLI
+module github.com/dappsteros-io/DappsterOS-CLI
 
-go 1.21
-
-toolchain go1.22.2
+go 1.23.2
 
 require (
 	github.com/alecthomas/chroma v0.10.0
@@ -49,7 +47,7 @@ require (
 )
 
 require (
-	github.com/dappster-io/DappsterOS-Common v0.4.9-alpha12
+	github.com/dappsteros-io/DappsterOS-Common v0.4.11
 	github.com/googollee/go-socket.io v1.7.0
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect

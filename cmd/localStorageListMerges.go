@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 dappster-io
+Copyright © 2022 dappsteros-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/dappster-io/DappsterOS-CLI/codegen/local_storage"
+	"github.com/dappsteros-io/DappsterOS-CLI/codegen/local_storage"
 )
 
 // localStorageListMergesCmd represents the localStorageListMerges command

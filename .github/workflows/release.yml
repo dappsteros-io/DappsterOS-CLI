@@ -13,7 +13,15 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Install dependencies for cross-compiling
-      run: "sudo apt update \nsudo apt-get --no-install-recommends --yes install \\\n  upx libc6-dev-amd64-cross \\\n  gcc-aarch64-linux-gnu libc6-dev-arm64-cross \\\n  gcc-arm-linux-gnueabihf libc6-dev-armhf-cross\n"
+      run: "sudo apt update\ 
+
+        sudo apt-get --no-install-recommends --yes install \\
+
+        \  upx libc6-dev-amd64-cross \\
+
+        \  gcc-aarch64-linux-gnu libc6-dev-arm64-cross \\
+
+        \  gcc-arm-linux-gnueabihf libc6-dev-armhf-cross\n"
     - name: Checkout
       uses: actions/checkout@v3
       with:
@@ -47,7 +55,7 @@ jobs:
         region: oss-cn-shanghai
         bucket: dappsteros
         assets: |
-          dist/checksums.txt:/dappster-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/checksums.txt
-          dist/linux-amd64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappster-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-amd64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz
-          dist/linux-arm64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappster-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-arm64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz
-          dist/linux-arm-7-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappster-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-arm-7-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz
+          dist/checksums.txt:/dappsteros-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/checksums.txt
+          dist/linux-amd64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappsteros-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-amd64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz
+          dist/linux-arm64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappsteros-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-arm64-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz
+          dist/linux-arm-7-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz:/dappsteros-io/DappsterOS-CLI/releases/download/${{ steps.get_version.outputs.VERSION }}/linux-arm-7-dappsteros-cli-${{ steps.get_version.outputs.VERSION }}.tar.gz

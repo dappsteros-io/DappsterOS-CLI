@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 dappster-io
+Copyright © 2022 dappsteros-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/dappster-io/DappsterOS-CLI/codegen/message_bus"
+	"github.com/dappsteros-io/DappsterOS-CLI/codegen/message_bus"
 	"github.com/spf13/cobra"
 )
 

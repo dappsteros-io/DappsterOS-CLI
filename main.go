@@ -1,11 +1,11 @@
-//go:generate bash -c "mkdir -p codegen/app_management && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package app_management https://raw.githubusercontent.com/dappster-io/DappsterOS-AppManagement/main/api/app_management/openapi.yaml > codegen/app_management/api.go"
-//go:generate bash -c "mkdir -p codegen/dappsteros && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package dappsteros https://raw.githubusercontent.com/dappster-io/DappsterOS/main/api/dappsteros/openapi.yaml > codegen/dappsteros/api.go"
-//go:generate bash -c "mkdir -p codegen/local_storage && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package local_storage https://raw.githubusercontent.com/dappster-io/DappsterOS-LocalStorage/main/api/local_storage/openapi.yaml > codegen/local_storage/api.go"
-//go:generate bash -c "mkdir -p codegen/message_bus && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package message_bus https://raw.githubusercontent.com/dappster-io/DappsterOS-MessageBus/main/api/message_bus/openapi.yaml > codegen/message_bus/api.go"
-//go:generate bash -c "mkdir -p codegen/user_service && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package user_service https://raw.githubusercontent.com/dappster-io/DappsterOS-UserService/main/api/user-service/openapi.yaml > codegen/user_service/api.go"
+//go:generate bash -c "mkdir -p codegen/app_management && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package app_management https://raw.githubusercontent.com/dappsteros-io/DappsterOS-AppManagement/main/api/app_management/openapi.yaml > codegen/app_management/api.go"
+//go:generate bash -c "mkdir -p codegen/dappsteros && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package dappsteros https://raw.githubusercontent.com/dappsteros-io/DappsterOS/main/api/dappsteros/openapi.yaml > codegen/dappsteros/api.go"
+//go:generate bash -c "mkdir -p codegen/local_storage && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package local_storage https://raw.githubusercontent.com/dappsteros-io/DappsterOS-LocalStorage/main/api/local_storage/openapi.yaml > codegen/local_storage/api.go"
+//go:generate bash -c "mkdir -p codegen/message_bus && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package message_bus https://raw.githubusercontent.com/dappsteros-io/DappsterOS-MessageBus/main/api/message_bus/openapi.yaml > codegen/message_bus/api.go"
+//go:generate bash -c "mkdir -p codegen/user_service && go run github.com/deepmap/oapi-codegen/cmd/oapi-codegen@v1.12.4 -generate types,client -package user_service https://raw.githubusercontent.com/dappsteros-io/DappsterOS-UserService/main/api/user-service/openapi.yaml > codegen/user_service/api.go"
 
 /*
-Copyright © 2022 dappster-io
+Copyright © 2022 dappsteros-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ limitations under the License.
 package main
 
 import (
-	"github.com/dappster-io/DappsterOS-CLI/cmd"
+	"github.com/dappsteros-io/DappsterOS-CLI/cmd"
 )
 
 var (

@@ -1,5 +1,5 @@
 /*
-Copyright © 2023 dappster-io
+Copyright © 2023 dappsteros-io
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/dappster-io/DappsterOS-CLI/codegen/dappsteros"
+	"github.com/dappsteros-io/DappsterOS-CLI/codegen/dappsteros"
 	"github.com/spf13/cobra"
 )
 

@@ -1,6 +1,6 @@
 # DappsterOS-CLI
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/dappster-io/DappsterOS-CLI.svg)](https://pkg.go.dev/github.com/dappster-io/DappsterOS-CLI) [![Go Report Card](https://goreportcard.com/badge/github.com/dappster-io/DappsterOS-CLI)](https://goreportcard.com/report/github.com/dappster-io/DappsterOS-CLI) [![goreleaser](https://github.com/dappster-io/DappsterOS-CLI/actions/workflows/release.yml/badge.svg)](https://github.com/dappster-io/DappsterOS-CLI/actions/workflows/release.yml) [![codecov](https://codecov.io/github/dappster-io/DappsterOS-CLI/branch/main/graph/badge.svg?token=XHM6PM8C0K)](https://codecov.io/github/dappster-io/DappsterOS-CLI)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dappsteros-io/DappsterOS-CLI.svg)](https://pkg.go.dev/github.com/dappsteros-io/DappsterOS-CLI) [![Go Report Card](https://goreportcard.com/badge/github.com/dappsteros-io/DappsterOS-CLI)](https://goreportcard.com/report/github.com/dappsteros-io/DappsterOS-CLI) [![goreleaser](https://github.com/dappsteros-io/DappsterOS-CLI/actions/workflows/release.yml/badge.svg)](https://github.com/dappsteros-io/DappsterOS-CLI/actions/workflows/release.yml) [![codecov](https://codecov.io/github/dappsteros-io/DappsterOS-CLI/branch/main/graph/badge.svg?token=XHM6PM8C0K)](https://codecov.io/github/dappsteros-io/DappsterOS-CLI)
 
 A command-line tool to interact with DappsterOS for testing and diagnosing purpose
 
